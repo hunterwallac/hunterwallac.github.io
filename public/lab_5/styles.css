@@ -69,7 +69,7 @@ body {
 }
 
 .flex-outer li button {
-  margin-right: 10px;
+  margin-left: opx;
   padding: 6px 12px;
   border: none;
   background: #333;
@@ -79,8 +79,5 @@ body {
   border-radius: 3px;
 }
 .flex-inner li {
-  width: 95px;
-}
-.checkbox-list-label p {
-  margin: 0 auto;
+  width: 80px;
 }
