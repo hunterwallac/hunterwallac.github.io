@@ -54,24 +54,25 @@
             </ul>
             </li>
             <li>
-            <button type="button" id="button1" formethod="post" name="button1">Submit Form</button><button onclick = "testFunction()" type="button" id="button2" formmethod="GET"  name="button2" >Activate</button>
+            <button type="submit" id="button1" formethod="post" name="button1">Submit Form</button>
+            <button type="button" id="button2" formmethod="get"  name="button2" onclick = "testFunction()" >Activate</button>
             </li>
             
         </ul>
         </form>
     </div>
     </div>
-    <script language="javascript">
-    function testFunction() {
+    <script>
+        function testFunction() {
         fetch('/api')
         .then((response) => response.text())
         .then((response) => {
              console.log(response);
-        })
-        var elem = document.querySelector('body');
-        elem.style.backgroundColor = orange;
-        var elem = document.querySelector('title')
-        elem.style.
+                const content = document.querySelector("h1")
+                content.innerHTML = response;
+                document.querySelector("body").style.backgroundColor = "#FF7F50";
+              
+            })
     }
     </script>
 </body>
