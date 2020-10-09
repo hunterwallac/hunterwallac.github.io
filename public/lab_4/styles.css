@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   color: #00ff00;
@@ -37,7 +37,7 @@ body {
 }
 
 .flex-inner {
-  padding: 0 8px;
+  padding: 95px;
   justify-content: space-between;  
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .flex-outer li p {
-  margin: 0;
+  margin-right: 10px;
 }
 
 .flex-outer li button {
@@ -81,6 +81,4 @@ body {
 .flex-inner li {
   width: 95px;
 }
-.checkbox-list-label p {
-  margin: 0 auto;
-}
+
